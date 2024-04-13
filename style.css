@@ -1,0 +1,148 @@
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    height: 800px;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .gradient-background2 {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  h1{
+    font-family: "Sacramento", cursive;
+    font-size: 3rem;
+    font-size: 10rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  h2{
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .name{
+    text-align: center;
+    position: relative;
+    top: 300px;
+  }
+  .Summary{
+    text-align: center;
+  }
+  .profile-img{
+    height: 150px;
+    border-radius: 50%;
+
+  }
+  .text-body-emphasis{
+    font-family: "Sacramento", cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .Heading{
+    font-family: "Sacramento", cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .skills{
+    width: 50%;
+    max-width: 600px;
+    padding: 0 20px;
+    }
+    .skill-name{
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 20px 0;
+        }
+        .skill-bar{
+        height: 14px;
+        width: 50%;
+        background: #282828;
+        border-radius: 10px;
+        }
+        .skill-per{
+        height: 14px;
+        background: #d13639;
+        border-radius: 3px;
+        position: relative;
+        animation: fillBars 2.5s 1;
+        }
+        .skill-per::before{
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background: #f1f1f1;
+        border-radius: 4px;
+        font-size: 10px;
+        top: -35px;
+        right: 0;
+       transform: translateX(50%);
+      }
+      .skill-per::after{
+        content:"";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #f1f1f1;
+        top: -20px;
+        right: 0;
+        transform: translateX(50%) rotate(45deg);
+        border-radius: 2px;
+        }
+        @keyframes fillBars{
+            from{
+            width: 0;
+            }
+            to{
+            width: 100%;
+            }
+         }
+         .project{
+            font-family: "Sacramento", cursive;
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 50px;
+         }
+         a {
+            color: white;
+            background-color: transparent;
+         }
+         a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+          }
+          .nav-item {
+            font-size: 1.5rem;
+          }
+          #contact p{
+            font-size: 1.5rem;
+          }
